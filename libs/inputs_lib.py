@@ -1,7 +1,8 @@
 import json
 import os
 import classes
-import variables
+
+from variables import URLS_PATH, JSON_PATH
 
 def input_json(path):
     jsons = []
@@ -25,8 +26,8 @@ def input_urls(path):
     return data
 
 def consolidate_for_mock():
-    urls = input_urls(variables.urls_path)
-    json = input_json(variables.json_path)
+    urls = input_urls(URLS_PATH)
+    json = input_json(JSON_PATH)
     obj = classes.Variant()
     result = []
     for i in range(len(urls)):
