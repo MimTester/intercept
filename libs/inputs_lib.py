@@ -34,5 +34,3 @@ def work():
         obj.json_for_mock = json[i]
         result.append(obj)
     return result
-
-work()
