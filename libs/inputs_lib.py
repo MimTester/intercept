@@ -24,7 +24,7 @@ def input_urls(path):
             data.append(line)
     return data
 
-def work():
+def consolidate_for_mock():
     urls = input_urls(variables.urls_path)
     json = input_json(variables.json_path)
     obj = classes.Variant()
